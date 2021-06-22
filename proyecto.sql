@@ -41,8 +41,8 @@ CREATE TABLE `clientes` (
 --
 
 INSERT INTO `clientes` (`idcliente`, `nombre`, `apellido`, `cedula`, `telefono`, `direccion`) VALUES
-(1, 'Julio', 'Castillo', '2300318371', '0981872142', 'Vía los Laureles'),
-(3, 'Lisbeth', 'Nuñez', '2201313123', '0982184234', 'Av. Tsáchila');
+(1, 'Mauricio', 'Jimenez', '1544994121', '0981872165', 'Mutualista Benalcazar'),
+(3, 'Jimena', 'Santander', '2201313123', '0982184321', 'Urbanización La macadamia');
 
 -- --------------------------------------------------------
 
@@ -64,9 +64,9 @@ CREATE TABLE `productos` (
 --
 
 INSERT INTO `productos` (`idproducto`, `codigo`, `descripcion`, `precioVenta`, `precioCompra`, `existencia`) VALUES
-(2, '1241241210', 'Dell Inspiron 14', '600.00', '400.00', '10.00'),
-(3, '1231241241', 'HP Notebook', '700.00', '650.00', '8.00'),
-(4, '1312414120', 'Impresora EPSON ', '330.00', '200.00', '5.00');
+(2, '1241241210', 'Bujias', '15.00', '10.00', '50.00'),
+(3, '1231241241', 'Bobinas', '20.00', '15.00', '8.00'),
+(4, '1312414120', 'Amortiguador ', '40.00', '30.00', '35.00');
 
 -- --------------------------------------------------------
 
@@ -100,8 +100,8 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`idusuario`, `nombreusuario`, `cedulausuario`, `usuario`, `contrasenia`) VALUES
-(1, 'Jordy', '2300318072', 'admin', 'admin'),
-(2, 'Luis', 'Chica', 'chica123', 'chica123');
+(1, 'Joel', '1726944026', 'admin', 'admin'),
+(2, 'Kevin', '1723659814', 'kevin1', 'kevin1');
 
 -- --------------------------------------------------------
 
@@ -118,16 +118,6 @@ CREATE TABLE `ventas` (
   `total` decimal(7,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Volcado de datos para la tabla `ventas`
---
-
-INSERT INTO `ventas` (`idventas`, `idcliente`, `fecha`, `idproducto`, `cantidad`, `total`) VALUES
-(3, 1, '2021-01-22 13:46:56', 3, 2, '1400.00');
-
---
--- Índices para tablas volcadas
---
 
 --
 -- Indices de la tabla `clientes`
